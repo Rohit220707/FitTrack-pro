@@ -1,0 +1,71 @@
+/* Light / Dark theme setup */
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+/* default */
+body.light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body.dark {
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+/* Navbar */
+.custom-navbar {
+  background: linear-gradient(90deg, #111827, #1f2937);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+body.dark .custom-navbar {
+  background: linear-gradient(90deg, #020617, #0f172a);
+}
+
+/* Cards */
+.card {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background-color: #ffffff;
+}
+
+body.dark .card {
+  background-color: #020617;
+  border-color: rgba(148, 163, 184, 0.5);
+}
+
+/* Inputs */
+body.dark .form-control,
+body.dark .form-select,
+body.dark input,
+body.dark textarea {
+  background-color: #020617;
+  color: #e5e7eb;
+  border-color: #374151;
+}
+
+body.dark .form-control::placeholder,
+body.dark input::placeholder {
+  color: #6b7280;
+}
+
+/* Links in navbar */
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #e5e7eb !important;
+}
+
+.navbar .nav-link:hover {
+  color: #38bdf8 !important;
+}
+
+/* Theme toggle button */
+.theme-toggle-btn {
+  border-radius: 99px;
+  padding: 4px 10px;
+}
